@@ -83,7 +83,7 @@ h2{font-size:34px;color:var(--deep);margin:6px 0 10px;font-weight:700;line-heigh
 .s-sage{background:var(--sage);color:#22363D}
 .s-sage .eyebrow{color:#22363D}
 .s-sage h2{color:#22363D}
-.s-sage strong{color:#22363D;font-weight:700;box-shadow:inset 0 -3px 0 var(--bg)}
+.s-sage strong{color:#1B2B30;font-weight:700}
 .s-sage .avatar{border-color:var(--bg)}
 .s-sage :focus-visible{outline-color:#22363D}
 
