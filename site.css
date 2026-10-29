@@ -90,7 +90,9 @@ h2{font-size:34px;color:var(--deep);margin:6px 0 10px;font-weight:700;line-heigh
 .s-sage :focus-visible{outline-color:#22363D}
 
 .formats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0 0;padding:0;list-style:none}
-.formats li{display:flex;gap:12px;align-items:center;background:var(--sage);color:#22363D;border-radius:18px;padding:16px 18px}
+.formats li{display:flex;gap:12px;align-items:center;background:var(--smoky);color:#22363D;border-radius:18px;padding:16px 18px}
+.formats li:nth-child(2){background:var(--primary);color:#fff}
+.formats li:nth-child(2) svg,.formats li:nth-child(2) span{color:#fff}
 .formats svg{width:26px;height:26px;color:#22363D;flex:none}
 .formats b{display:block;font-weight:500}
 .formats span{font-size:14px;color:#22363D}
