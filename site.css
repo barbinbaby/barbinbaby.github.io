@@ -78,6 +78,8 @@ h2{font-size:34px;color:var(--deep);margin:6px 0 10px;font-weight:700;line-heigh
 .s-cream{background:var(--bg)}
 .s-smokyl{background:var(--smokyl)}
 .s-smokyl .eyebrow{color:var(--deep)}
+.s-sagebg{background:var(--sage)}
+.s-sagebg .eyebrow,.s-sagebg h2{color:#22363D}
 .s-smoky{background:var(--smoky)}
 .s-smoky .eyebrow{color:var(--deep)}
 .s-sage{background:var(--sage);color:#22363D}
@@ -88,10 +90,10 @@ h2{font-size:34px;color:var(--deep);margin:6px 0 10px;font-weight:700;line-heigh
 .s-sage :focus-visible{outline-color:#22363D}
 
 .formats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0 0;padding:0;list-style:none}
-.formats li{display:flex;gap:12px;align-items:center;background:var(--sand);border-radius:18px;padding:16px 18px}
-.formats svg{width:26px;height:26px;color:var(--primary);flex:none}
+.formats li{display:flex;gap:12px;align-items:center;background:var(--sage);color:#22363D;border-radius:18px;padding:16px 18px}
+.formats svg{width:26px;height:26px;color:#22363D;flex:none}
 .formats b{display:block;font-weight:500}
-.formats span{font-size:14px;color:var(--muted)}
+.formats span{font-size:14px;color:#22363D}
 
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:56px;margin:0;padding:0;list-style:none;align-items:stretch}
 .steps li{--c:var(--primary);position:relative;text-align:center;padding:28px 22px 26px;background:var(--card);border:2px solid var(--c);border-radius:22px}
@@ -160,7 +162,7 @@ html.a11y-links main a,html.a11y-links footer a{outline:2px dashed currentColor;
 html.a11y-contrast{--bg:#fff;--sand:#fff;--card:#fff;--primary:#000;--deep:#000;--accent:#000;--blush:#fff;--text:#000;--muted:#000;--tint-1:#fff;--tint-2:#fff}
 html.a11y-contrast .steps li{--c:#000}
 html.a11y-contrast .card{background:#fff!important;border-color:#000!important}
-html.a11y-contrast .s-smokyl,html.a11y-contrast .s-smoky,html.a11y-contrast .s-sage{background:#fff;color:#000}
+html.a11y-contrast .s-sagebg,html.a11y-contrast .formats li,html.a11y-contrast .s-smokyl,html.a11y-contrast .s-smoky,html.a11y-contrast .s-sage{background:#fff;color:#000}
 html.a11y-contrast .s-sage h2,html.a11y-contrast .s-sage strong,html.a11y-contrast .s-sage .eyebrow{color:#000}
 html.a11y-contrast .card{--band:var(--primary);--ink:#fff;background:var(--card);border-radius:24px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 8px 24px color-mix(in srgb,var(--deep) 12%,transparent)}
 html.a11y-contrast .card,html.a11y-contrast details,html.a11y-contrast .formats li,html.a11y-contrast .badges li{border:2px solid #000}
@@ -190,3 +192,4 @@ html.a11y-noanim *{animation:none!important;transition:none!important;scroll-beh
   section{padding:52px 0}
   h2{font-size:28px}
 }
+
