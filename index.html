@@ -11,7 +11,7 @@
 <meta property="og:locale" content="he_IL">
 <link rel="icon" href="img/mark.jpg">
 <link rel="preload" href="fonts/rubik-hebrew.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="site.css?v=5">
+<link rel="stylesheet" href="site.css?v=6">
 </head>
 <body>
 <a class="skip" href="#main">דילוג לתוכן הראשי</a>
@@ -26,6 +26,7 @@
   <symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></g></symbol>
   <symbol id="i-drop" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></symbol>
   <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.5C10 5 7 4.5 3.5 5v13c3.5-.5 6.5 0 8.5 1.5 2-1.5 5-2 8.5-1.5V5c-3.5-.5-6.5 0-8.5 1.5zM12 6.5v13"/></g></symbol>
   <symbol id="i-gift" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7M7.5 8a2.5 2.5 0 0 1 0-5C10 3 12 8 12 8s2-5 4.5-5a2.5 2.5 0 0 1 0 5"/></g></symbol>
 </svg>
 
@@ -35,7 +36,7 @@
     <nav aria-label="ניווט ראשי">
       <ul>
         <li><a href="#about">עליי</a></li>
-        <li><a href="#services">שירותים</a></li>
+        <li><a href="#services">הליווי שלי</a></li>
         <li><a href="#how">איך זה עובד</a></li>
         <li><a href="#faq">שאלות נפוצות</a></li>
         <li><a href="#contact">יצירת קשר</a></li>
@@ -50,10 +51,10 @@
       <div>
         <p class="eyebrow">אחות מוסמכת · טיפת חלב · פגייה · יועצת הנקה · יועצת שינה</p>
         <h1 id="hero-title">ידע של אחות,<br> לב של אמא</h1>
-        <p class="lead">ליווי אישי בהנקה, בשינה ובימים הראשונים עם התינוק, מהרחצה הראשונה ועד הלילה השלם הראשון. בבית או בזום, בכל מקום שאת נמצאת.</p>
+        <p class="lead">ליווי אישי בהנקה, בשינה ובימים הראשונים עם התינוק, מהרחצה הראשונה ועד הלילה השלם הראשון. בבית או בזום, בכל מקום שאת נמצאת ואיפה שהכי נוח לך.</p>
         <div class="ctas">
-          <a class="btn btn-main" href="https://api.whatsapp.com/send?phone=972506701084&amp;text=%D7%94%D7%99%D7%99%20%D7%91%D7%A8%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%E2%9C%A8" target="_blank" rel="noopener"><svg aria-hidden="true" focusable="false"><use href="#i-wa"/></svg>בואי נדבר בוואטסאפ<span class="sr-only"> (נפתח בחלון חדש)</span></a>
-          <a class="btn btn-ghost" href="#services">מה אני מציעה</a>
+          <a class="btn btn-main" href="https://api.whatsapp.com/send?phone=972506701084&amp;text=%D7%94%D7%99%D7%99%20%D7%91%D7%A8%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%E2%9C%A8" target="_blank" rel="noopener"><svg aria-hidden="true" focusable="false"><use href="#i-wa"/></svg>בואי נדבר<span class="sr-only"> בוואטסאפ (נפתח בחלון חדש)</span></a>
+          <a class="btn btn-ghost" href="#services">במה אני יכולה לעזור</a>
         </div>
       </div>
       <figure class="hero-photo">
@@ -63,14 +64,15 @@
     </div>
   </section>
 
-  <section class="about s-sage" id="about" aria-labelledby="about-title">
+  <section class="about s-deep" id="about" aria-labelledby="about-title">
     <div class="wrap about-grid">
       <img class="avatar" src="img/profile.jpg" alt="בר בנימינוב מחייכת" width="150" height="150">
       <div>
-        <p class="eyebrow">אני בר</p>
-        <h2 id="about-title">אחות בטיפת חלב, והליווי האישי שלך</h2>
-        <p>אני בר בנימינוב, אחות מוסמכת, יועצת הנקה ויועצת שינה. אחרי כמה שנים בפגייה, שם למדתי כמה עדינה יכולה להיות ההתחלה, הגעתי לטיפת חלב. היום אני פוגשת שם כל יום תינוקות והורים בכל השלבים: מהביקור הראשון אחרי הלידה, דרך מעקב גדילה והתפתחות, ועד השאלות על הנקה, אוכל ושינה.</p>
-        <p>בליווי האישי אני מביאה את אותו ידע מקצועי, עם הזמן להקשיב לעומק ולבנות יחד תוכנית שמותאמת בדיוק לך ולתינוק. וכשנולד אור, הבן שלי, פגשתי את כל זה גם מהצד של האמא, ולמדתי כמה חשוב שיהיה מישהו שמקשיב, לא שופט, ונותן כלים שעובדים באמת ביום-יום.</p>
+        <p class="eyebrow">מי אני?</p>
+        <h2 id="about-title">ליווי מקצועי, בגובה העיניים</h2>
+        <p>נעים מאוד, אני בר, <strong>אחות מוסמכת, יועצת הנקה ויועצת שינה</strong>. את דרכי המקצועית התחלתי בעבודה בפגייה, שם למדתי עד כמה רגישה ומורכבת יכולה להיות תחילת החיים, ומשם הגעתי לטיפת חלב. כיום אני פוגשת שם מדי יום הורים ותינוקות לאורך כל הדרך: החל מהמפגש הראשון שלאחר הלידה, דרך מעקבי גדילה והתפתחות, ועד למענה על סוגיות של הנקה, תזונה ושינה.</p>
+        <p>במסגרת הליווי האישי, אני משלבת את הידע המקצועי שלי עם המרחב והזמן להקשיב, כדי לבנות יחד תוכנית שמותאמת במדויק לצרכים שלכם ושל התינוק.</p>
+        <p>הלידה של בני, אור, הפגישה אותי עם המסע הזה גם מהזווית האימהית, וחידדה אצלי את ההבנה עד כמה זה משמעותי לקבל תמיכה בגובה העיניים, ללא שיפוטיות, יחד עם כלים פרקטיים שעושים סדר בשגרת היומיום.</p>
       </div>
     </div>
   </section>
@@ -78,48 +80,67 @@
   <section class="s-cream" id="services" aria-labelledby="services-title">
     <div class="wrap">
       <div class="sec-head">
-        <p class="eyebrow">שירותים</p>
+        <p class="eyebrow">הליווי שלי</p>
         <h2 id="services-title">במה אני יכולה לעזור</h2>
-        <p>כל ליווי מתחיל בהיכרות ומותאם אישית למשפחה שלך.</p>
+        <p>מההיריון ועד הלילות השקטים. כל ליווי מתחיל בהיכרות ומותאם אישית למשפחה שלך.</p>
       </div>
-      <div class="cards">
+      <p class="swipe-hint" aria-hidden="true">החליקי לצדדים לכל סוגי הליווי</p>
+      <div class="cards" role="region" aria-label="סוגי הליווי" tabindex="0">
+        <article class="card c-olive">
+          <div class="card-head"><svg aria-hidden="true" focusable="false"><use href="#i-book"/></svg><h3>הכנה להנקה</h3><span class="tag">חדש</span></div>
+          <div class="card-body">
+            <p>מגיעות ללידה עם ידע וביטחון, כדי שההנקה הראשונה תתחיל נכון.</p>
+            <ul>
+              <li>מה באמת קורה בימים הראשונים ואיך נבנה ייצור החלב</li>
+              <li>תפיסה נכונה ותנוחות הנקה, למניעת כאבים ופציעות</li>
+              <li>איך יודעים שהתינוק אוכל מספיק</li>
+              <li>היערכות לאתגרים נפוצים, כמו קושי בחיבור</li>
+              <li>תוכנית הנקה אישית ללידה, עם מענה לכל החששות מראש</li>
+            </ul>
+            <p class="note-in">מתאים גם ללידה חוזרת: לרענן, להיזכר ולמנוע טעויות עבר.</p>
+          </div>
+        </article>
+        <article class="card c-clay">
+          <div class="card-head"><svg aria-hidden="true" focusable="false"><use href="#i-gift"/></svg><h3>חבילת ניובורן</h3><span class="tag">מתנה ליולדת</span></div>
+          <div class="card-body">
+            <p>ביקור בית והדרכה בימים הראשונים, כדי להרגיש בטוחים עם התינוק מהרגע הראשון.</p>
+            <ul>
+              <li>החזקה נכונה, ערסול ודרכי הרגעה</li>
+              <li>זיהוי סימני רעב, גזים ועייפות</li>
+              <li>עזרה בהנקה ובהאכלה נכונה</li>
+              <li>רחצה ראשונה יחד</li>
+              <li>החתלה, הלבשה וטיפול בטבור</li>
+              <li>שינה בטוחה</li>
+            </ul>
+            <p class="note-in">העניקו כשובר מתנה ליולדת!</p>
+          </div>
+        </article>
         <article class="card c-teal">
-          <div class="ic" aria-hidden="true"><svg focusable="false"><use href="#i-drop"/></svg></div>
-          <h3>ייעוץ הנקה</h3>
-          <p>מהימים הראשונים ועד הגמילה, תמיכה מקצועית ורגישה.</p>
-          <ul>
-            <li>הכנה להנקה לפני הלידה</li>
-            <li>תפיסה נכונה וכאבים בהנקה</li>
-            <li>צינורית חסומה ודלקות</li>
-            <li>כמות חלב, שאיבה ובקבוקים</li>
-            <li>חזרה לעבודה והנקה</li>
-          </ul>
+          <div class="card-head"><svg aria-hidden="true" focusable="false"><use href="#i-drop"/></svg><h3>ייעוץ הנקה</h3></div>
+          <div class="card-body">
+            <p>מהלידה והימים הראשונים ועד הפרידה מההנקה.</p>
+            <ul>
+              <li>חיבור נכון לשד</li>
+              <li>כאבים והטיפול בהם</li>
+              <li>צינוריות חסומות וגודש</li>
+              <li>שאיבות ובקבוקים</li>
+              <li>חזרה לעבודה</li>
+              <li>פרידה מהנקה</li>
+            </ul>
+          </div>
         </article>
-        <article class="card c-dusk">
-          <div class="ic" aria-hidden="true"><svg focusable="false"><use href="#i-moon"/></svg></div>
-          <h3>ייעוץ שינה</h3>
-          <p>תוכנית שינה עדינה ומותאמת גיל, בקצב שנכון לכם.</p>
-          <ul>
-            <li>שגרת ערב ושינה בריאה</li>
-            <li>יקיצות לילה מרובות</li>
-            <li>הרדמות עצמאית</li>
-            <li>שנ"צים ולוחות זמנים</li>
-            <li>שינה בטיולים ובשינויי שגרה</li>
-          </ul>
-        </article>
-        <article class="card c-peach">
-          <p class="tag">מתנה מושלמת ליולדת</p>
-          <div class="ic"><svg aria-hidden="true" focusable="false"><use href="#i-gift"/></svg></div>
-          <h3>חבילת ניובורן</h3>
-          <p>ביקור בית בימים הראשונים, ללמוד בביטחון את כל מה שאף אחד לא הסביר.</p>
-          <ul>
-            <li>רחצה ראשונה, יחד ובידיים בטוחות</li>
-            <li>החתלה, חיתול וטיפול בטבור</li>
-            <li>איך מחזיקים, מרימים ומרגיעים</li>
-            <li>זיהוי סימני רעב, שובע ועייפות</li>
-            <li>שינה בטוחה ושגרה ראשונה</li>
-          </ul>
-          <p class="gift">אפשר להעניק כשובר מתנה, ליולדת או לזוג שבדרך.</p>
+        <article class="card c-lav">
+          <div class="card-head"><svg aria-hidden="true" focusable="false"><use href="#i-moon"/></svg><h3>ייעוץ שינה</h3></div>
+          <div class="card-body">
+            <p>הדרכת שינה וייעוץ מותאם גיל, בקצב שנכון לכם.</p>
+            <ul>
+              <li>סדר יום ושגרת ערב</li>
+              <li>הרגלי שינה בריאים</li>
+              <li>יקיצות לילה מרובות</li>
+              <li>הירדמות עצמאית</li>
+              <li>שינה בטיולים ובשינויי שגרה</li>
+            </ul>
+          </div>
         </article>
       </div>
       <ul class="formats" aria-label="אופני הליווי">
@@ -137,25 +158,25 @@
         <h2 id="how-title">שלושה צעדים פשוטים</h2>
       </div>
       <ol class="steps">
-        <li><div class="n" aria-hidden="true">1</div><h3>שיחת היכרות</h3><p>מדברות בוואטסאפ או בטלפון, מבינות מה קורה ומה הכי חשוב לך.</p></li>
-        <li><div class="n" aria-hidden="true">2</div><h3>פגישת ייעוץ</h3><p>בבית או בזום. בונות יחד תוכנית מעשית ומותאמת.</p></li>
-        <li><div class="n" aria-hidden="true">3</div><h3>ליווי והמשך</h3><p>אני זמינה לשאלות ולדיוקים, עד שמרגישים שזה עובד.</p></li>
+        <li><div class="n" aria-hidden="true">1</div><h3>שיחת היכרות</h3><p>שיחה קצרה בוואטסאפ או בטלפון, כדי להכיר, להבין מה עובר עלייך ומה הכי חשוב לך עכשיו.</p></li>
+        <li><div class="n" aria-hidden="true">2</div><h3>פגישת ייעוץ</h3><p>נפגשות בבית או בזום, ובונות יחד תוכנית מעשית שמותאמת לך ולתינוק.</p></li>
+        <li><div class="n" aria-hidden="true">3</div><h3>ליווי והמשך</h3><p>גם אחרי הפגישה אני זמינה לשאלות ולדיוקים, עד שהשגרה החדשה מרגישה טבעית.</p></li>
       </ol>
     </div>
   </section>
 
-  <section class="s-dusk" id="faq" aria-labelledby="faq-title">
+  <section class="s-lav" id="faq" aria-labelledby="faq-title">
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow">שאלות נפוצות</p>
         <h2 id="faq-title">יש לך שאלה?</h2>
       </div>
       <div class="faq-list">
-        <details><summary>מתי כדאי לפנות לייעוץ הנקה?</summary><p>בכל שלב. אפשר כבר בהיריון, כהכנה, ואפשר כשמשהו מרגיש לא נכון: כאב, חשש מכמות החלב, תינוק שלא עולה במשקל, או פשוט צורך בביטחון.</p></details>
-        <details><summary>מאיזה גיל אפשר להתחיל ייעוץ שינה?</summary><p>אפשר לדבר על הרגלי שינה בריאים כבר מהחודשים הראשונים. את התוכנית אני מתאימה לגיל, להתפתחות ולמה שנכון למשפחה שלכם.</p></details>
-        <details><summary>פגישה בזום יעילה כמו ביקור בית?</summary><p>ברוב המקרים כן. בייעוץ שינה הזום עובד מצוין, ובהנקה אפשר לראות תנוחות והנקה בזמן אמת דרך המצלמה. אם צריך, נתאם ביקור בית.</p></details>
+        <details><summary>מתי כדאי לפנות לייעוץ הנקה?</summary><p>אפשר כבר בהיריון, בהכנה להנקה, ובכל שלב אחרי הלידה. למשל כשההנקה כואבת, כשיש חשש שהתינוק לא מקבל מספיק חלב, כשהוא לא עולה מספיק במשקל, או פשוט כשאת רוצה להרגיש בטוחה יותר.</p></details>
+        <details><summary>מאיזה גיל אפשר להתחיל ייעוץ שינה?</summary><p>אפשר לדבר על הרגלי שינה בריאים כבר מהחודשים הראשונים. מגיל חצי שנה אפשר לעבוד גם על הירדמות עצמאית, בתוכנית שמותאמת לגיל, להתפתחות ולמשפחה שלכם.</p></details>
+        <details><summary>אפשר להיפגש בזום, או שצריך ביקור בית?</summary><p>תלוי בסוג הליווי. ייעוץ שינה עובד מצוין בזום, וגם הכנה להנקה אפשר לעשות מרחוק. ייעוץ הנקה נעשה בביקור בית, כי חשוב לראות את ההנקה מקרוב. במקרים חריגים ובתיאום מראש אפשר גם מרחוק.</p></details>
         <details><summary>אפשר לתת את חבילת הניובורן במתנה?</summary><p>כן, וזו אחת המתנות הכי שימושיות ליולדת. שלחו לי הודעה ואכין שובר מתנה אישי, והיולדת תתאם איתי ביקור כשנוח לה.</p></details>
-        <details><summary>אני גרה בחו"ל, אפשר לקבל ליווי?</summary><p>בהחלט. אני מלווה משפחות דוברות עברית בכל העולם, בזום ובוואטסאפ, ומתאימה שעות לאזור הזמן שלך.</p></details>
+        <details><summary>אני גרה בחו"ל, אפשר לקבל ליווי?</summary><p>בהחלט. ייעוץ שינה והכנה להנקה אפשר לעשות בזום מכל מקום בעולם, בשעות שמתאימות לאזור הזמן שלך.</p></details>
       </div>
     </div>
   </section>
